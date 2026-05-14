@@ -1,0 +1,29 @@
+# MFNP Subsidence Monitor — Python dependencies
+# Install: pip install -r requirements.txt
+
+# ── Core data science ──────────────────────────────────────────────────────────
+numpy>=1.24
+pandas>=2.0
+scipy>=1.11
+
+# ── Geospatial ─────────────────────────────────────────────────────────────────
+geopandas>=0.14
+shapely>=2.0
+pyproj>=3.6
+rasterio>=1.3          # (optional) for raster reading; needed if consuming GeoTIFF exports
+fiona>=1.9             # GeoDataFrame I/O backend
+
+# ── Visualisation ─────────────────────────────────────────────────────────────
+folium>=0.15           # interactive Leaflet maps (HeatMapWithTime requires >=0.15)
+branca>=0.7            # Folium dependency for colormaps and HTML elements
+
+# ── Google Earth Engine ────────────────────────────────────────────────────────
+earthengine-api>=0.1.380   # pip install earthengine-api → then: earthengine authenticate
+
+# ── Date utilities ─────────────────────────────────────────────────────────────
+python-dateutil>=2.8
+
+# ── Optional: notebook / EDA ───────────────────────────────────────────────────
+# jupyterlab
+# matplotlib>=3.7
+# seaborn>=0.13
